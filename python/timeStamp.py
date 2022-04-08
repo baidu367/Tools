@@ -2,7 +2,7 @@
 # Time : 2022/4/8 16:42 
 # FileName : timeStamp.py
 # Author : Gecko
-# Description：****
+# Description：时间戳与格式化时间互相转换
 import time
 
 
