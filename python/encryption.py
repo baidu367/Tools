@@ -27,7 +27,7 @@ def string_to_md5(string, length=32, case=False):
         return md5.hexdigest()
 
 
-print(string_to_md5(123456))
+print(string_to_md5(123456))  # e10adc3949ba59abbe56e057f20f883e
 
 
 def string_to_b64encode(string):
@@ -43,7 +43,7 @@ def string_to_b64encode(string):
         return ''
 
 
-print(string_to_b64encode(123456))
+print(string_to_b64encode(123456))  # MTIzNDU2
 
 
 def b64decode_to_string(string):
@@ -59,7 +59,7 @@ def b64decode_to_string(string):
         return ''
 
 
-print(b64decode_to_string('MTIzNDU2'))
+print(b64decode_to_string('MTIzNDU2'))  # 123456
 
 
 def string_to_sha256(string, case=False):
@@ -76,4 +76,4 @@ def string_to_sha256(string, case=False):
     return sha256.hexdigest()
 
 
-print(string_to_sha256('123456'))
+print(string_to_sha256('123456'))  # 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
