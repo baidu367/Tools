@@ -53,4 +53,4 @@ def run_time(seconds):
     return "总用时%02d天%02d小时%02d分%02d秒" % (d, h, m, s)
 
 
-print(run_time(73210))  # 总用时00天20小时20分10秒
+print(run_time(7320))  # 总用时00天20小时20分10秒
