@@ -17,16 +17,11 @@ class Ftp_file(FTP):
         self.encoding = 'utf-8'  # 编码格式
         self.set_debuglevel(2)  # 是否开启调试模式
         self.buffer_size = 1024 * 1000  # 根据实际带宽进行设置
-        # self.host = '127.0.0.1'  # 服务器IP地址
-        # self.port = 21  # 服务器端口号
-        # self.username = '*'  # 用户名
-        # self.password = '*'  # 用户密码
-        # self.basepathfile = '存放根路径'  # 文件存放根路径
-        self.host = '192.168.101.90'  # 服务器IP地址
+        self.host = '127.0.0.1'  # 服务器IP地址
         self.port = 21  # 服务器端口号
-        self.username = 'ftp1'  # 用户名
-        self.password = 'Softsec@413'  # 用户密码
-        self.basepathfile = '/home/ftp/softcheck'  # 文件存放根路径
+        self.username = '*'  # 用户名
+        self.password = '*'  # 用户密码
+        self.basepathfile = '存放根路径'  # 文件存放根路径
 
     def Connect(self):
         # 连接ftp服务器跳转到指定目标
