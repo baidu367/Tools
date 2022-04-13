@@ -1,4 +1,7 @@
-# Tools
+[python目录](#python目录)   [查询工具](#查询工具)
+
+# 目录结构及文件描述信息
+
 
 **python目录**
 
@@ -29,7 +32,7 @@
 |[frida_hook_so.js](https://github.com/baidu367/Tools/blob/main/js/frida_hook_so.js)|frida hook so层方法|
 
 
-**查询工具**
+# 查询工具
 
 |功能|链接|
 |:-----:|:-----:|
@@ -39,7 +42,7 @@
 |AAEncode加密/解密|http://www.atoolbox.net/Tool.php?Id=703|
 |jjencode与aaencode解密|https://www.qtool.net/decode|
 |1024程序员开发工具箱 |https://1024tools.com/|
-|爬虫工具库|https://spidertools.cn/#/curl2Request|
+|爬虫工具库|https://spidertools.cn/|
 |sojson加密/解密|http://js.huojb.com/|
 |api文档查询|https://tool.oschina.net/apidocs|
 |SEO综合查询|https://www.aizhan.com/cha/|
@@ -48,3 +51,6 @@
 |阿里python源|https://mirrors.aliyun.com/pypi/simple/|
 |官方python源|https://mirrors.aliyun.com/pypi/simple/|
 |python代码混淆|https://pyob.oxyry.com/|
+
+
+#### Portal
