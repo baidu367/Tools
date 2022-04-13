@@ -1,4 +1,4 @@
-// frida 检测请求组件绕过验证效验
+// frida 检测请求组件绕过证书效验
 // https://github.com/WooyunDota/DroidSSLUnpinning
 
 
