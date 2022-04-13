@@ -21,3 +21,4 @@
 |[AES.js](https://github.com/baidu367/Tools/blob/main/js/AES.js)|AES加密|
 |[frida_hook_checkhttp.js](https://github.com/baidu367/Tools/blob/main/js/frida_hook_checkhttp.js)|frida 检测请求组件绕过证书效验|
 |[frida_hook_overload.js](https://github.com/baidu367/Tools/blob/main/js/frida_hook_overload.js)|frida hook类中重载方法|
+|[frida_hook_so.js](https://github.com/baidu367/Tools/blob/main/js/frida_hook_so.js)|frida hook so层方法|
