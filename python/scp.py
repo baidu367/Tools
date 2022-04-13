@@ -29,8 +29,7 @@ def upload_scp(local_path, local_filename, remote_path):
     try:
         scpclient.put(local_path, remote_path)
     except FileNotFoundError as e:
-        print(e)
-        print("系统找不到指定文件" + local_path)
+        print("系统找不到指定文件：" + local_path)
     else:
         print("文件上传成功")
     ssh_client.close()
