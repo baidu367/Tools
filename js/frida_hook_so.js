@@ -3,7 +3,7 @@
 
 var getAuthString = Module.getExportByName('libnative-lib.so', 'getAuthString');
 var native_lib_base_add = parseInt(getAuthString) - parseInt('0xA5364');
-send('[8]native_lib_base_add:' + ptr(native_lib_base_add));
+send('[*]native_lib_base_add:' + ptr(native_lib_base_add));
 
 var md5_add = ptr(native_lib_base_add + parseInt('0x444CC'));
 Interceptor.attach(
