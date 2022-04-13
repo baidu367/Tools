@@ -10,6 +10,7 @@
 |[fiddlerRequestHeadFromat.py](https://github.com/baidu367/Tools/blob/main/python/fiddlerRequestHeadFromat.py)|fiddler请求头转换成json格式|
 |[fridaHook.py](https://github.com/baidu367/Tools/blob/main/python/fridaHook.py)|frida注入模板|
 |[ftp.py](https://github.com/baidu367/Tools/blob/main/python/ftp.py)|ftp上传、下载文件|
+|[logInfo.py](https://github.com/baidu367/Tools/blob/main/python/logInfo.py)|自定义日志|
 |[pacp.py](https://github.com/baidu367/Tools/blob/main/python/pacp.py)|分析pacp包请求内容|
 |[scp.py](https://github.com/baidu367/Tools/blob/main/python/scp.py)|scp上传文件|
 |[sendEmail.py](https://github.com/baidu367/Tools/blob/main/python/sendEmail.py)|发送邮件|
