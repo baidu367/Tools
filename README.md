@@ -10,6 +10,7 @@
 |[fiddlerRequestHeadFromat.py](https://github.com/baidu367/Tools/blob/main/python/fiddlerRequestHeadFromat.py)|fiddler请求头转换成json格式|
 |[fridaHook.py](https://github.com/baidu367/Tools/blob/main/python/fridaHook.py)|frida注入模板|
 |[ftp.py](https://github.com/baidu367/Tools/blob/main/python/ftp.py)|ftp上传、下载文件|
+|[scp.py](https://github.com/baidu367/Tools/blob/main/python/scp.py)|scp上传文件|
 |[sendEmail.py](https://github.com/baidu367/Tools/blob/main/python/sendEmail.py)| 发送邮件|
 |[timeStamp.py](https://github.com/baidu367/Tools/blob/main/python/timeStamp.py)| 时间戳、格式化时间互相转换、消耗时间格式化|
 
