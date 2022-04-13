@@ -1,5 +1,6 @@
-var CryptoJS = require("crypto-js");
+// AES加密
 
+var CryptoJS = require("crypto-js");
 function cbc_encrypt(text) {
     // CBC模式加密
     var a = CryptoJS.AES.encrypt(text, key, {
