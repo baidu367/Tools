@@ -17,3 +17,5 @@
  |文件名|文件描述|
 |:-----:|:-----|
 |AES.js|AES加密|
+|frida_hook_checkhttp.js|frida 检测请求组件绕过验证效验|
+|frida_hook_overload.js|frida hook类中重载方法|
