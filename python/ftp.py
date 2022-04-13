@@ -52,8 +52,8 @@ class Ftp_file(FTP):
     def push_file(self, save_filepath, save_filename, content):
         '''
         FTP上传文件
-        :param filename:需要上传的文件名
-        :param filepath: 服务器需要上传的地址
+        :param save_filename: 服务器要保存的文件名
+        :param save_filepath: 服务器保存的地址
         :param content: 文件二进制流
         '''
         # 上传文件到ftp服务器
