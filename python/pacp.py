@@ -19,16 +19,3 @@ for pack in cap:
         print('[*]应用请求域名：', host)
         print('应用请求路径：', url)
 cap.close()
-
-
-
-
-
-
-
-
-
-
-
-
-
