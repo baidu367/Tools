@@ -6,6 +6,7 @@
 import os
 import logging
 import traceback
+import colorlog
 
 
 class logger:
@@ -26,9 +27,21 @@ class logger:
         else:
             os.mkdir(os.path.join(LOG_PATH, LOG_FILE))
         self.prefix = prefix_name
-        self.format = logging.Formatter(
+        # 文件写入格式
+        self.save_file_format = logging.Formatter(
             '[%(asctime)s][%(threadName)s:%(thread)d][task_id:%(name)s][%(filename)s:%(lineno)d]' '[%(levelname)s] : %(message)s'
         )
+        # 终端输出格式并带有自定义颜色
+        log_colors_config = {
+            'DEBUG': 'cyan',
+            'INFO': 'green',
+            'WARNING': 'yellow',
+            'ERROR': 'red',
+            'CRITICAL': 'red',
+        }
+        self.format = colorlog.ColoredFormatter(
+            '%(log_color)s[%(asctime)s] [%(threadName)s:%(thread)d]  [%(filename)s:%(lineno)d] [%(module)s:%(funcName)s] [%(levelname)s] ： %(message)s',
+            log_colors=log_colors_config)
         self.info_logger = logging.getLogger("info")
         self.error_logger = logging.getLogger("error")
         sh = logging.StreamHandler()  # 往屏幕上输出
@@ -37,14 +50,14 @@ class logger:
         info_file_handler = logging.FileHandler(
             os.path.join(LOG_PATH, LOG_FILE, prefix_name + LOG_INFO), encoding=LOG_ENCODING
         )
-        info_file_handler.setFormatter(self.format)
+        info_file_handler.setFormatter(self.save_file_format)
         self.info_logger.addHandler(info_file_handler)
         if is_debug_info:
             self.info_logger.addHandler(sh)  # 屏幕打印日志不需要可以注释掉
         error_file_handler = logging.FileHandler(
             os.path.join(LOG_PATH, LOG_FILE, prefix_name + LOG_ERROR), encoding=LOG_ENCODING
         )
-        error_file_handler.setFormatter(self.format)
+        error_file_handler.setFormatter(self.save_file_format)
         self.error_logger.addHandler(error_file_handler)
         if is_debug_info:
             self.error_logger.addHandler(sh)  # 屏幕打印日志不需要可以注释掉
@@ -68,9 +81,6 @@ class logger:
         msg = ''.join([types, '>' * 5, msg.replace('\n', '').replace('\r', '')])
         self.error_logger.error(msg, *args, **kwargs)
 
-    def fatal(self, types, msg, *args, **kwargs):
-        msg = ''.join([types, '>' * 5, msg.replace('\n', '').replace('\r', '')])
-        self.error_logger.fatal(msg, *args, **kwargs)
 
     def critical(self, types, msg, *args, **kwargs):
         msg = ''.join([types, '>' * 5, msg.replace('\n', '').replace('\r', '')])
@@ -78,7 +88,7 @@ class logger:
 
 
 if __name__ == '__main__':
-    project_path = os.getcwd()
+    project_path = os.path.dirname(os.path.abspath(__file__))
     LOG_PATH = os.path.join(project_path, 'log')
     prefix_name = 'phone'
     LOG_INFO = '_info.log'
@@ -88,7 +98,6 @@ if __name__ == '__main__':
     log.info('打印信息', '打印')
     log.warning('警告信息', '警告')
     log.error('错误信息', '错误')
-    log.fatal('致命错误', '致命')
     log.critical('危及错误', '危及')
     try:
         a = 0
