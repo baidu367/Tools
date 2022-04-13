@@ -7,6 +7,7 @@
 |[aes.py](https://github.com/baidu367/Tools/blob/main/python/aes.py)|AES加密|
 |[dingWebHook.py](https://github.com/baidu367/Tools/blob/main/python/dingWebHook.py)|钉钉群发消息|
 |[encryption.py](https://github.com/baidu367/Tools/blob/main/python/encryption.py)|md5、base64、sha256加密|
+|[fiddlerRequestHeadFromat.py](https://github.com/baidu367/Tools/blob/main/python/fiddlerRequestHeadFromat.py)|fiddler请求头转换成json格式|
 |[fridaHook.py](https://github.com/baidu367/Tools/blob/main/python/fridaHook.py)|frida注入模板|
 |[ftp.py](https://github.com/baidu367/Tools/blob/main/python/ftp.py)|ftp上传、下载文件|
 |[sendEmail.py](https://github.com/baidu367/Tools/blob/main/python/sendEmail.py)| 发送邮件|
