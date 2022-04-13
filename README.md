@@ -4,7 +4,7 @@
     
 |文件名|文件描述|
 |:-----:|:-----|
-|aes.py|AES加密|
+|aes.py(https://github.com/baidu367/Tools/blob/main/python/aes.py)|AES加密|
 |dingWebHook.py|钉钉群发消息|
 |encryption.py|md5、base64、sha256加密|
 |fridaHook.py|frida注入模板|
