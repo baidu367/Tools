@@ -62,7 +62,7 @@ def send_message(access_token, secret, message):
     try:
         session = requests.Session()
         session.mount('https://', HTTPAdapter(max_retries=3))
-        response = requests.post(url, data=json.dumps(data), params=params, headers=headers, timeout=20)
+        response = session.post(url, data=json.dumps(data), params=params, headers=headers, timeout=20)
         result = response.json()
         if result['errcode'] == 0:
             print('消息发送成功')
