@@ -5,9 +5,11 @@
 # Description：mongoengine操作方法
 from mongoengine import connect, disconnect
 from mongoengine.queryset.visitor import Q
-from mongoengine import Document, StringField,  EmbeddedDocument, DateTimeField, ListField, EmbeddedDocumentField, IntField
+from mongoengine import Document, StringField, EmbeddedDocument, DateTimeField, ListField, EmbeddedDocumentField, \
+    IntField
 import datetime
-
+import json
+from bson import ObjectId
 
 # 字段
 # StringField 字符串
@@ -47,6 +49,8 @@ mongodbinfo = {
     'password': '',
     'db': 'xxxx',
 }
+
+
 class Task_project(EmbeddedDocument):  # 嵌入式文档类型
     taskId = StringField(required=True)
     shopName = StringField(required=True)
@@ -55,11 +59,13 @@ class Task_project(EmbeddedDocument):  # 嵌入式文档类型
     count = IntField(default=0)
     status = StringField(required=True)
 
+
 class Shop_project(Document):  # 文档类型
     shopName = StringField(required=True)
     shopCommand = StringField(required=True)
     scriptName = StringField(default=None)
     taskTresults = ListField(EmbeddedDocumentField(Task_project))
+
 
 # 连接数据库
 connect(**mongodbinfo)
@@ -105,7 +111,7 @@ Shop_project.objects.all().order_by('-shopName')
 ##################################################修改###################################################################
 # 修改写法：update(操作符__字段=设置的值)、update_one(操作符__字段=设置的值), 返回修改数量
 # 注意：操作符后是2个下划线
-#操作符：
+# 操作符：
 # set 设置指定的值
 # unset 删除指定的值,可以直接删键
 # inc 自增一个指定的值
@@ -145,3 +151,15 @@ Shop_project(**shopinfo).save()
 # # 关闭数据库
 disconnect()
 
+
+class JSONEncoder(json.JSONEncoder):
+    '''
+    操作mongoengine时mongodb序列化异常处理,使用方法：JSONEncoder().encode(data.to_mongo())
+    '''
+
+    def default(self, obj):
+        if isinstance(obj, ObjectId):
+            return str(obj)
+        if isinstance(obj, datetime.datetime):
+            return obj.strftime("%Y-%m-%d %H:%M:%S")
+        return json.JSONEncoder.default(self, obj)
