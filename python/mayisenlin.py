@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 # Time : 2021/3/3 14:08 
-# FileName : miyisenlin.py
+# FileName : mayisenlin.py
 # Author : Gecko
 # Description：蚂蚁森林物理工具
 import uiautomator2 as u2
