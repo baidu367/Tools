@@ -41,7 +41,7 @@
 
 |功能|链接|
 |:-----:|:-----:|
-|在线加解密工具|[https://bing.xinac.net](https://bing.xinac.net){target="_blank"}|
+|在线加解密工具|http://www.1818288.com/|
 |时间戳查询|https://tool.lu/timestamp/|
 |crontab表达式查询|https://tool.lu/crontab/|
 |AAEncode加密/解密|http://www.atoolbox.net/Tool.php?Id=703|
