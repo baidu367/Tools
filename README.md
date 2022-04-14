@@ -11,7 +11,7 @@
 
 |文件名|功能描述|
 |:-----:|:-----:|
-|[aes.py](https://github.com/baidu367/Tools/blob/main/python/aes.py){target="_blank"}|AES加密|
+|[aes.py](https://github.com/baidu367/Tools/blob/main/python/aes.py)|AES加密|
 |[dingWebHook.py](https://github.com/baidu367/Tools/blob/main/python/dingWebHook.py)|钉钉群发消息|
 |[encryption.py](https://github.com/baidu367/Tools/blob/main/python/encryption.py)|md5、base64、sha256加密|
 |[fiddlerRequestHeadFromat.py](https://github.com/baidu367/Tools/blob/main/python/fiddlerRequestHeadFromat.py)|fiddler请求头转换成json格式|
@@ -41,7 +41,7 @@
 
 |功能|链接|
 |:-----:|:-----:|
-|在线加解密工具|http://www.1818288.com/|
+|在线加解密工具|[https://bing.xinac.net](https://bing.xinac.net){target="_blank"}|
 |时间戳查询|https://tool.lu/timestamp/|
 |crontab表达式查询|https://tool.lu/crontab/|
 |AAEncode加密/解密|http://www.atoolbox.net/Tool.php?Id=703|
