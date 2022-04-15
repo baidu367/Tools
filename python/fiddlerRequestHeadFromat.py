@@ -26,18 +26,22 @@ Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7
 Cookie: 1+1=3
 
 '''
-new_sting = ''
-headers_dict = {}
-data = string.split('\n')
-for text in data:
-    if text:
-        split_text = text.split(':')
-        key = split_text[0]
-        value = ':'.join(split_text[1:]).strip()
-        new_sting += '\t"{}": "{}",\n'.format(key, value)
-new_sting = "{%s}" % new_sting
 
-print(new_sting)
+
+def fiddler_to_dict(string):
+    new_sting = ''
+    data = string.split('\n')
+    for text in data:
+        if text:
+            split_text = text.split(':')
+            key = split_text[0]
+            value = ':'.join(split_text[1:]).strip()
+            new_sting += '\t"{}": "{}",\n'.format(key, value)
+    new_sting = "{%s}" % new_sting
+    return new_sting
+
+
+print(fiddler_to_dict(string))
 '''
 {	'Host': 'www.*****.com',
 	'Connection': 'keep-alive',
