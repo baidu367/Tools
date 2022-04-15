@@ -7,11 +7,11 @@ import socket
 
 
 def net_is_used(port, ip='127.0.0.1'):
-    '''
+    """
     :param port: 端口号
     :param ip: 访问地址
     :return: True 或 False
-    '''
+    """
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     try:
         s.connect((ip, port))
