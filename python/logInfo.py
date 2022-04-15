@@ -14,14 +14,14 @@ class logger:
             self, LOG_PATH="log", LOG_FILE='', prefix_name="log", LOG_INFO='_info.log', LOG_ERROR='_error.log',
             LOG_ENCODING='utf-8', is_debug_info=True
     ):
-        '''
+        """
         :param LOG_PATH:    日志目录名
         :param LOG_FILE:    日志文件夹
         :param prefix_name: 日志文件前缀名
         :param LOG_INFO:    info.log日志文件
         :param LOG_ERROR:   error.log日志文件
         :param LOG_ENCODING: 日志文件编码格式
-        '''
+        """
         if os.path.exists(os.path.join(LOG_PATH, LOG_FILE)):
             pass
         else:
