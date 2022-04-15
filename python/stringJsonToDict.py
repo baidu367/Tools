@@ -2,7 +2,7 @@
 # Time : 2022/4/15 15:14 
 # FileName : stringJsonToDict.py
 # Author : Gecko
-# Description：字符串格式json抓换成python字典
+# Description：字符串格式json转换成python字典
 import json
 import ast
 
