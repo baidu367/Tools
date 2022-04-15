@@ -20,7 +20,7 @@
 |[mongoEngine.py](python/mongoEngine.py)|mongoengine操作方法|[pacp.py](python/pacp.py)|分析pacp包请求内容|
 |[scp.py](python/scp.py)|scp上传文件|[sendEmail.py](python/sendEmail.py)|发送邮件|
 |[testPort.py](python/testPort.py)|测试端口是否被占用|[threadingModule.py](python/threadingModule.py)|多线程|
-|[timeStamp.py](python/timeStamp.py)|时间戳与格式化时间互相转换、消耗时间格式化、获取几天前的日期|
+|[timeStamp.py](python/timeStamp.py)|时间戳与格式化时间互相转换、消耗时间格式化、获取几天前的日期|[stringJsonToDict.py](python/stringJsonToDict.py)|字符串格式json抓换成python字典|
 
 **js目录**
 
@@ -48,7 +48,7 @@
 |功能|链接|功能|链接|
 |:-----:|:-----:|:-----:|:-----:|
 |Python|https://docs.python.org/zh-cn/3/|Java8|https://www.matools.com/api/java8|
-|Scrapy|https://www.osgeo.cn/scrapy/index.html|Fastapi使用文档|https://www.jianshu.com/nb/39726436|
+|Scrapy|https://www.osgeo.cn/scrapy/index.html|Fastapi使用说明|https://www.jianshu.com/nb/39726436|
 |Web|https://developer.mozilla.org/zh-CN/docs/Web|Feapder|https://boris-code.gitee.io/feapder/|
 |Crawlab|https://docs.crawlab.cn/zh/|Flask|https://dormousehole.readthedocs.io/en/latest/|
 |Django|https://docs.djangoproject.com/zh-hans/2.0/|Mysql|https://www.mysqlzh.com/|
