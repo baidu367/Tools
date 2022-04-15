@@ -30,13 +30,13 @@ class Ftp_file(FTP):
         self.cwd(self.basepathfile)
 
     def pull_file(self, write_path, path, filename):
-        '''
+        """
         FTP下载文件
         :param write_path: 本地保存路径
         :param path: 远程服务器路径
         :param filename: 文件名
         :return:
-        '''
+        """
         start_time = time.time()
         log.info(f'拉取FTP文件:{filename}')
         with open(write_path, "wb") as f:
@@ -50,12 +50,12 @@ class Ftp_file(FTP):
         log.info(f'拉取FTP文件:{filename}，耗时:{end_time - start_time}')
 
     def push_file(self, save_filepath, save_filename, content):
-        '''
+        """
         FTP上传文件
         :param save_filename: 服务器要保存的文件名
         :param save_filepath: 服务器保存的地址
         :param content: 文件二进制流
-        '''
+        """
         # 上传文件到ftp服务器
         self.cwd(self.basepathfile)
         log.info('[FTP]文件存储路径: ' + save_filepath)
