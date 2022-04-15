@@ -9,13 +9,13 @@ from scp import SCPClient
 
 
 def upload_scp(local_path, local_filename, remote_path):
-    '''
+    """
     将指定目录的文件上传到服务器指定目录
     :param local_path: 本地文件夹路径
     :param local_filename: 本地文件夹路径下面的文件名称
     :param remote_path: 远程服务器目录
     :return:
-    '''
+    """
     host = "***.***.***.***"  # 服务器ip地址
     port = 22  # 端口号
     username = "****"  # ssh 用户名
