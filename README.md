@@ -20,7 +20,7 @@
 |[mongoEngine.py](python/mongoEngine.py)|mongoengine操作方法|[pacp.py](python/pacp.py)|分析pacp包请求内容|
 |[scp.py](python/scp.py)|scp上传文件|[sendEmail.py](python/sendEmail.py)|发送邮件|
 |[testPort.py](python/testPort.py)|测试端口是否被占用|[threadingModule.py](python/threadingModule.py)|多线程|
-|[timeStamp.py](python/timeStamp.py)|时间戳与格式化时间互相转换、消耗时间格式化、获取几天前的日期|[stringJsonToDict.py](python/stringJsonToDict.py)|字符串格式json抓换成python字典|
+|[timeStamp.py](python/timeStamp.py)|时间戳与格式化时间互相转换、消耗时间格式化、获取几天前的日期|[stringJsonToDict.py](python/stringJsonToDict.py)|字符串格式json转换成python字典|
 
 **js目录**
 
