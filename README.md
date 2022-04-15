@@ -2,6 +2,8 @@
 |:-----:|
 |[目录结构及文件描述信息](#目录结构及文件描述信息)|
 |[查询工具](#查询工具)|
+|[开发文档](#开发文档)|
+# 
 
 
 # 目录结构及文件描述信息
@@ -56,3 +58,20 @@
 |阿里python源|https://mirrors.aliyun.com/pypi/simple/|
 |官方python源|https://mirrors.aliyun.com/pypi/simple/|
 |python代码混淆|https://pyob.oxyry.com/|
+
+# 开发文档
+
+|功能|链接|
+|:-----:|:-----:|
+|Python文档|https://docs.python.org/zh-cn/3/|
+|Java8文档|https://www.matools.com/api/java8|
+|Scrapy文档|https://www.osgeo.cn/scrapy/index.html|
+|Fastapi文档|https://www.jianshu.com/nb/39726436|
+|Web开发文档|https://developer.mozilla.org/zh-CN/docs/Web|
+|Feapder文档|https://boris-code.gitee.io/feapder/|
+|Crawlab文档|https://docs.crawlab.cn/zh/
+|Flask文档|https://dormousehole.readthedocs.io/en/latest/|
+|Django文档|https://docs.djangoproject.com/zh-hans/2.0/|
+|Mysql文档|https://www.mysqlzh.com/|
+|MongoDB文档|https://docs.mongoing.com/|
+|Redis文档|http://www.redis.cn/documentation.html|
