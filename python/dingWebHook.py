@@ -14,11 +14,11 @@ from requests.adapters import HTTPAdapter
 
 
 def timestamp_sign(secret):
-    '''
+    """
     获取接口参数
     :param secret: 加签密钥
     :return: 请求参数
-    '''
+    """
     timestamp = str(round(time.time() * 1000))
     secret_enc = secret.encode('utf-8')
     string_to_sign = '{}\n{}'.format(timestamp, secret)
@@ -29,14 +29,14 @@ def timestamp_sign(secret):
 
 
 def send_message(access_token, secret, message):
-    '''
+    """
     发送钉钉消息
     :param access_token: 用户token
     :param timestamp: 请求参数
     :param sign: 请求参数
     :param message: 发送消息
     :return: None
-    '''
+    """
     text = '你的任务已经完成，请查看任务信息如下:'
     timestamp, sign = timestamp_sign(secret)
     for key, value in message.items():
