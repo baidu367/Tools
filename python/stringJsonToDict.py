@@ -13,7 +13,7 @@ string = '''{"name":'Tom','sex': "男",
 
 def stingJson_to_dict(string):
     """
-    字符串格式json数据抓换成python字典
+    字符串格式json数据转换成python字典
     :param string: Json形式的不规则字符串
     :return:
     """
