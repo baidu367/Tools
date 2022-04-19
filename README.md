@@ -21,6 +21,7 @@
 |[scp.py](python/scp.py)|scp上传文件|[sendEmail.py](python/sendEmail.py)|发送邮件|
 |[testPort.py](python/testPort.py)|测试端口是否被占用|[threadingModule.py](python/threadingModule.py)|多线程|
 |[timeStamp.py](python/timeStamp.py)|时间戳与格式化时间互相转换、消耗时间格式化、获取几天前的日期|[stringJsonToDict.py](python/stringJsonToDict.py)|字符串格式json转换成python字典|
+|[playWright.py](python/playWright.py)|playWright使用方法|
 
 **js目录**
 
@@ -53,3 +54,4 @@
 |Crawlab|https://docs.crawlab.cn/zh/|Flask|https://dormousehole.readthedocs.io/en/latest/|
 |Django|https://docs.djangoproject.com/zh-hans/2.0/|Mysql|https://www.mysqlzh.com/|
 |MongoDB|https://docs.mongoing.com/|Redis|http://www.redis.cn/documentation.html|
+|playwright|https://playwright.dev/|
