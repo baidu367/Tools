@@ -129,3 +129,38 @@ if __name__ == '__main__':
     # 获取结束时间
     end_time = time.time()
     print(run_time(end_time - stat_time))
+
+
+"""
+选择器： 
+1、css选择器（div#s-top-left  a:nth-child(2)） 
+2、xpath（//div[@id="s-top-left"]/a[2]'） 
+3、文本选择器（"内容" 或者 '内容'）
+
+page = context.new_page()
+page,content() 获取页面内容
+page.mouse 鼠标操作
+page.click(选择器) 鼠标点击事件
+page.dblclick(选择器) 鼠标双击事件
+page.click(选择器, modifiers=['Shift']) Shift+鼠标点击事件
+page.hover(选择器) 鼠标悬停事件 
+page.click(选择器, position={ 'x': 0, 'y': 0}) 点击指定坐标
+page.click(选择器, button='right') 鼠标右击事件
+page.press(选择器, 组合键) 选择某个元素键盘操作
+page.fill(选择器, 输入内容) 输入操作
+page.type(选择器, 输入内容, 延迟时间单位毫秒)  延迟输入操作
+page.check(选择器) 勾选
+page.is_checked(选择器)  勾选状态
+page.uncheck(选择器) 取消勾选
+page.selectOption(选择器) 下拉框操作，可以单选或者多选，只针对元素标签有效果
+page.screenshot(存放路径) 截图操作
+page.locator(选择器).screenshot(存放路径) 元素截图
+page.close() 关闭页面
+page1 = p.value 页面切换
+page.wait_for_event(事件) 等待某个事件
+page.wait_for_url(url) 等待某个URL
+page.wait_for_timeout(等待时间) 等待时间单位毫秒
+page.wait_for_selector(选择器，等待时间) 等待某个元素加载
+page.wait_for_load_state(状态) 等待某个状态被激发
+page.wait_for_function(表达式) 等待某个函数被执行完毕
+"""
