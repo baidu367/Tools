@@ -29,13 +29,14 @@
 |:-----:|:-----:|:-----:|:-----:|
 |[AES.js](js/AES.js)|AES加密|[frida_hook_checkhttp.js](js/frida_hook_checkhttp.js)|frida 检测请求组件绕过证书效验|
 |[frida_hook_overload.js](js/frida_hook_overload.js)|frida hook类中重载方法|[frida_hook_so.js](js/frida_hook_so.js)|frida hook so层方法|
+|[capy_project.js](js/capy_project.js)|复制对象环境|[MyProxy.js](js/MyProxy.js)|环境调用监测|
 
 
 # 查询工具
 
 |功能|链接|功能|链接|
 |:-----:|:-----:|:-----:|:-----:|
-|在线加解密工具|http://www.1818288.com/|时间戳查询|https://tool.lu/timestamp/|
+|在线加解密工具|http://www.1818288.com/|在线加解密工具|https://gchq.github.io/CyberChef/|
 |crontab表达式查询|https://tool.lu/crontab/|AAEncode加密/解密|http://www.atoolbox.net/Tool.php?Id=703|
 |jjencode与aaencode解密|https://www.qtool.net/decode|1024程序员开发工具箱 |https://1024tools.com/|
 |爬虫工具库|https://spidertools.cn/|sojson加密/解密|http://js.huojb.com/|
@@ -43,6 +44,7 @@
 |ICP备案查询|https://www.beianx.cn/|网易python源|https://mirrors.163.com/pypi/simple/|
 |阿里python源|https://mirrors.aliyun.com/pypi/simple/|官方python源|https://mirrors.aliyun.com/pypi/simple/|
 |python代码混淆|https://pyob.oxyry.com/|浏览器环境检测|https://bot.sannysoft.com/|
+|在线加解密工具|http://www.1818288.com/|时间戳查询|https://tool.lu/timestamp/|
 
 # 开发文档
 
