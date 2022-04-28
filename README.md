@@ -29,7 +29,7 @@
 |:-----:|:-----:|:-----:|:-----:|
 |[AES.js](js/AES.js)|AES加密|[frida_hook_checkhttp.js](js/frida_hook_checkhttp.js)|frida 检测请求组件绕过证书效验|
 |[frida_hook_overload.js](js/frida_hook_overload.js)|frida hook类中重载方法|[frida_hook_so.js](js/frida_hook_so.js)|frida hook so层方法|
-|[capy_project.js](js/capy_project.js)|复制对象环境|[MyProxy.js](js/MyProxy.js)|环境调用监测|
+|[copy_project.js](js/capy_project.js)|复制对象环境|[MyProxy.js](js/MyProxy.js)|环境调用监测|
 
 
 # 查询工具
