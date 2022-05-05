@@ -96,13 +96,9 @@ adb shell screencap 手机路径/xxx.png
 ```shell
 adb shell screenrecord 手机路径/xxx.mp4
 ```
-frida端口转发
+端口转发
 ```shell
-adb forward tcp:27042 tcp:27042
-```
-ida端口转发
-```shell
-adb forward tcp:23946 tcp:23946 
+adb forward tcp:端口 tcp:端口
 ```
 查看机器的序列号
 ```shell
