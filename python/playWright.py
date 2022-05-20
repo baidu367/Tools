@@ -72,6 +72,7 @@ async def async_function(windows):
             )
             # 执行录制视频
             page = await context.new_page()
+            page.on('response', on_response)
             # 不执行录制视频
             # page = await browser.new_page()
             await page.goto(url)
@@ -109,6 +110,8 @@ def run_time(seconds):
     d, h = divmod(h, 24)
     return "总用时%02d天%02d小时%02d分%02d秒" % (d, h, m, s)
 
+def on_response(response):
+    print(f'Status {response.status}, {response.url}')
 
 if __name__ == '__main__':
     # 获取开始
@@ -138,7 +141,7 @@ if __name__ == '__main__':
 3、文本选择器（"内容" 或者 '内容'）
 
 page = context.new_page()
-page,content() 获取页面内容
+page.content() 获取页面内容
 page.mouse 鼠标操作
 page.click(选择器) 鼠标点击事件
 page.dblclick(选择器) 鼠标双击事件
