@@ -1,4 +1,4 @@
-
+// 复制浏览器对象
 
 let getObjectValue = function (obj) {
     let newObj = new Object();
