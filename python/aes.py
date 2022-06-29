@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding:utf-8 -*-
 # Time : 2021/7/22 14:46 
-# FileName : AES加密模版.py
+# FileName : aes.py
 # Author : Gecko
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import pad
@@ -16,7 +16,8 @@ class AES_encrypt():
         if len(iv) == 16:
             iv = iv.encode()
         else:
-            iv = pad(iv.encode(), AES.block_size)
+            add = 16 - (len(iv) % 16)
+            iv = iv.encode() + ('\0' * add).encode('utf-8')
         self.iv = iv
 
     def ecb_encrypt(self, text):
@@ -96,7 +97,6 @@ class AES_encrypt():
         return result
 
 
-
 if __name__ == '__main__':
     string = '今天是个开心的日子！'
     key = '7c6e1257d0e81ff55bda80cc904365ae'
@@ -105,4 +105,3 @@ if __name__ == '__main__':
     aes = AES_encrypt(key=key, iv=iv)
     enctypy_str = aes.cfb_encrypt(string)
     aes.cfb_decrypt(enctypy_str)
-
