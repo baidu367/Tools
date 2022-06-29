@@ -1,3 +1,5 @@
+// 代理的方式调式对象调试
+
 let mydocument = {}
 let mynavigator = {};
 
