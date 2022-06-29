@@ -15,9 +15,11 @@ class AES_encrypt():
         self.key = key.encode()
         if len(iv) == 16:
             iv = iv.encode()
-        else:
+        elif len(iv) < 16:
             add = 16 - (len(iv) % 16)
             iv = iv.encode() + ('\0' * add).encode('utf-8')
+        else:
+            raise Exception("IV length error")
         self.iv = iv
 
     def ecb_encrypt(self, text):
