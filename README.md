@@ -45,7 +45,7 @@
 |:-----:|:-----:|:-----:|:-----:|
 |[frida.md](frida/frida.md)|frida API|
 |[firda_hook_crypto.js](frida/firda_hook_crypto.js)|frida hook 加密算法|[frida_byte_with_string.js](js/frida_byte_with_string.js)|frida调用函数， 字节与字符串之间相互转换|
-|[frida_hook_overload.js](frida/frida_hook_overload.js)|frida hook类中重载方法|[frida_hook_so.js](frida/frida_hook_so.js)|frida hook so层方法|
+|[frida_hook_checkhttp.js](frida/frida_hook_checkhttp.js)|frida 检测请求组件绕过证书效验|[frida_hook_overload.js](frida/frida_hook_overload.js)|frida hook类中重载方法|
 |[frida_clear_verify__ssl.js](frida/frida_clear_verify__ssl.js)|ssl 证书效验|[frida_dump_certificate.js](frida/frida_dump_certificate.js)|dump客户端证书|
 
 
