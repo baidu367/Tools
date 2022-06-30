@@ -61,14 +61,14 @@ function cfb_decrypt(text) {
 }
 
 
-var key = CryptoJS.enc.Utf8.parse("50579511308d0d8d7964121c6e34030bc8d26ffe5501b648d472375f3078b036"),
-    iv = CryptoJS.enc.Utf8.parse("50579511308d0d8d7964121c6e34030bc8d26ffe5501b648d472375f3078b036");
+var key = CryptoJS.enc.Utf8.parse("4683929779293864"),
+    iv = CryptoJS.enc.Base64.parse("CgELBQQPBwkXAwEGCAwNWw==");
 
 console.log('============================================')
-string = "中国";
-var enctypy_str = cfb_encrypt(string);
+string = '[{"page_name":"com.mumayi.market.ui.RecommendActivity","duration":36089},{"page_name":"com.mumayi.market.ui.MainFrameActivity","duration":874},{"page_name":"com.mumayi.market.ui.showapp.ShowAppActivity","duration":1737},{"page_name":"com.mumayi.market.ui.MainFrameActivity","duration":30617},{"page_name":"com.mumayi.market.ui.MainFrameActivity","duration":0},{"page_name":"com.mumayi.market.ui.SplashActivity","duration":3075}]';
+var enctypy_str = cbc_encrypt(string);
 console.log(string + '加密以后得到的结果是:\n' + enctypy_str)
 console.log('============================================')
-var decrypt_str = cfb_decrypt(enctypy_str)
+var decrypt_str = cbc_decrypt(enctypy_str)
 console.log(enctypy_str + '解密以后得到的结果是:\n' + decrypt_str)
 console.log('============================================')
