@@ -15,6 +15,13 @@
 |:-----:|:-----:|:-----:|:-----:|
 |[root.md](android/root.md)|判断手机是否root|[adb.md](android/adb.md)|adb常用命令|
 
+**docker目录**
+
+|文件名|功能描述|文件名|功能描述
+|:-----:|:-----:|:-----:|:-----:|
+|[docker.md](docker/docker.md)|docker安装及使用|[Dockerfle.md](docker/Dockerfile.md)|Dockerfile指令说明|
+
+
 **python目录**
 
 |文件名|功能描述|文件名|功能描述|
@@ -37,7 +44,8 @@
 |:-----:|:-----:|:-----:|:-----:|
 |[AES.js](js/AES.js)|AES加密|[frida_hook_checkhttp.js](js/frida_hook_checkhttp.js)|frida 检测请求组件绕过证书效验|
 |[copy_project.js](js/copy_project.js)|复制对象环境|[MyProxy.js](js/MyProxy.js)|环境调用监测|
-|[md5.js](js/md5.js)|标准md5|[MyProxy.js](js/MyProxy.js)|环境调用监测|
+|[md5.js](js/md5.js)|标准md5|[web_clear_all_setInterval.js](js/web_clear_all_setInterval.js)|清除所有定时器|
+|[web_hook_all.js](js/web_hook_all.js)|标准md5|[web_hook_params.js](js/web_hook_params.js)|hook cookie, 寻找 cookie被赋值的地方--->视图找到cookie的加密生成方式|
 
 **frida目录**
 
