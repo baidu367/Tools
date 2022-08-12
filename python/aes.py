@@ -8,7 +8,6 @@ from Crypto.Util.Padding import pad
 import base64
 from binascii import b2a_hex
 
-
 class AES_encrypt():
     def __init__(self, key, iv=''):
         self.block_size = 16
@@ -21,6 +20,13 @@ class AES_encrypt():
         else:
             raise Exception("IV length error")
         self.iv = iv
+    def unpad(self, string):
+        """
+        去除尾部多余填充
+        :param string: 需要去除填充的内容
+        :return:
+        """
+        return string[:-ord(string[len(string) - 1:])]
 
     def ecb_encrypt(self, text):
         """
@@ -43,7 +49,7 @@ class AES_encrypt():
         """
         base64_decrypted = base64.b64decode(text.encode('utf-8'))
         cryptos = AES.new(self.key, AES.MODE_ECB)
-        result = str(cryptos.decrypt(base64_decrypted), encoding='utf-8').strip()
+        result = str(self.unpad(cryptos.decrypt(base64_decrypted)), encoding='utf-8').strip()
         print(f'ECB moudle [{text}] decrypt is [{result}]')
         return result
 
@@ -69,7 +75,7 @@ class AES_encrypt():
         """
         base64_decrypted = base64.b64decode(text.encode('utf-8'))
         cryptos = AES.new(self.key, AES.MODE_CBC, self.iv)
-        result = str(cryptos.decrypt(base64_decrypted), encoding='utf-8').strip()
+        result = str(self.unpad(cryptos.decrypt(base64_decrypted)), encoding='utf-8').strip()
         print(f'CBC moudle [{text}] decrypt is [{result}]')
         return result
 
@@ -94,7 +100,7 @@ class AES_encrypt():
         """
         base64_decrypted = base64.b64decode(text.encode('utf-8'))
         cryptos = AES.new(key=self.key, mode=AES.MODE_CFB, IV=self.iv, segment_size=128)
-        result = str(cryptos.decrypt(base64_decrypted), encoding='utf-8').strip()
+        result = str(self.unpad(cryptos.decrypt(base64_decrypted)), encoding='utf-8').strip()
         print(f'CFB moudle [{text}] decrypt is [{result}]')
         return result
 
