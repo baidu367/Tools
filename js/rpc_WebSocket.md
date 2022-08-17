@@ -1,6 +1,7 @@
 ```javascript
 // javascript 注入代码
-window.transfer = '接收的内容';
+try {
+    window.transfer = '接收的内容';
 (function () {
     var res = window.transfer;
     if (window.flag) {
@@ -16,6 +17,9 @@ window.transfer = '接收的内容';
         }
     }
 })()
+}catch (e) {
+    
+}
 ```
 
 ```python
