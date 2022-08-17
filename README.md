@@ -46,6 +46,7 @@
 |[copy_project.js](js/copy_project.js)|复制对象环境|[MyProxy.js](js/MyProxy.js)|环境调用监测|
 |[md5.js](js/md5.js)|标准md5|[web_clear_all_setInterval.js](js/web_clear_all_setInterval.js)|清除所有定时器|
 |[web_hook_all.js](js/web_hook_all.js)|标准md5|[web_hook_params.js](js/web_hook_params.js)|hook cookie, 寻找 cookie被赋值的地方--->视图找到cookie的加密生成方式|
+|[rpc_WebSocket.md](js/rpc_WebSocket.md)|RPC调用|
 
 **frida目录**
 
