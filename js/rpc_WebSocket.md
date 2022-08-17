@@ -6,7 +6,7 @@ window.transfer = '接收的内容';
     if (window.flag) {
         window.ws.send(res);
     } else {
-        var ws = new WebSocket('ws://127.0.0.1:9989');
+        var ws = new WebSocket('ws://127.0.0.1:9999');
         window.ws = ws;
         window.flag = true;
         ws.open = function (evt) {
